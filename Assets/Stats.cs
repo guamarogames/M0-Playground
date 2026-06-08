@@ -13,6 +13,15 @@ void Start()
         Debug.Log("Velocidade:" + velocidade);
          Debug.Log("Vivo: " + vivo);
      Debug.Log("Nome: "+ nome);
+     vida = vida -100;
+
+     if(vida <= 0)
+        {
+            vivo = false;
+        }
+
+        Debug.Log("Vida após dano: "+ vida);
+        Debug.Log("Vivo: "+ vivo); 
     }
 
     void Update()

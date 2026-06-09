@@ -13,15 +13,24 @@ void Start()
         Debug.Log("Velocidade:" + velocidade);
          Debug.Log("Vivo: " + vivo);
      Debug.Log("Nome: "+ nome);
-     vida = vida -100;
+     vida = vida -10;
 
-     if(vida <= 0)
+     if (vida <= 0)
         {
-            vivo = false;
+            Debug.Log("Status: Morto");
         }
-
-        Debug.Log("Vida após dano: "+ vida);
-        Debug.Log("Vivo: "+ vivo); 
+        else if (vida <= 30)
+        {
+            Debug.Log("Status: Critico");
+        }
+        else if (vida <= 70)
+        {
+            Debug.Log("Status: Ferido");
+        }
+        else
+        {
+            Debug.Log("Status: Saudavel");
+        }
     }
 
     void Update()

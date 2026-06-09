@@ -31,6 +31,10 @@ void Start()
         {
             Debug.Log("Status: Saudavel");
         }
+        for (int i = 0; i < 10; i++)
+        {
+            Debug.Log("Inimigo: " + i);
+        }
     }
 
     void Update()

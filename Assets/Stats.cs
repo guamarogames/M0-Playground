@@ -41,6 +41,12 @@ void Start()
             Debug.Log("Contagem: " + contagem);
             contagem++;
         }
+        TomarDano();
+    }
+void TomarDano()
+    {
+        vida = vida - 30;
+        Debug.Log("Vida apos dano: " + vida);
     }
 
     void Update()

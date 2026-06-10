@@ -35,6 +35,12 @@ void Start()
         {
             Debug.Log("Inimigo: " + i);
         }
+        int contagem = 0;
+        while (contagem < 5)
+        {
+            Debug.Log("Contagem: " + contagem);
+            contagem++;
+        }
     }
 
     void Update()

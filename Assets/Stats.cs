@@ -41,11 +41,11 @@ void Start()
             Debug.Log("Contagem: " + contagem);
             contagem++;
         }
-        TomarDano();
+        TomarDano(50);
     }
-void TomarDano()
+void TomarDano(int dano)
     {
-        vida = vida - 30;
+        vida = vida - dano;
         Debug.Log("Vida apos dano: " + vida);
     }
 
